@@ -22,7 +22,7 @@ Add it in your root build.gradle at the end of repositories:
   
   Init the library in your Application's file like this:
   
-  Presence.init(this, new Presence.PresenceChangeListener() {
+  	Presence.init(this, new Presence.PresenceChangeListener() {
             @Override
             public void onBecameOnline() {
                 Toast.makeText(SampleApp.this, "We are Online", Toast.LENGTH_SHORT).show();
@@ -38,21 +38,21 @@ Add it in your root build.gradle at the end of repositories:
    Or like this:
    
    
-   public class SampleApp extends Application implements Presence.PresenceChangeListener {
+   	public class SampleApp extends Application implements Presence.PresenceChangeListener {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        Presence.init(this);
-    }
+	    @Override
+	    public void onCreate() {
+		super.onCreate();
+		Presence.init(this);
+	    }
 
-    @Override
-    public void onBecameOnline() {
-        Toast.makeText(this, "We are Online", Toast.LENGTH_SHORT).show();
-    }
+	    @Override
+	    public void onBecameOnline() {
+		Toast.makeText(this, "We are Online", Toast.LENGTH_SHORT).show();
+	    }
 
-    @Override
-    public void onBecameOffline() {
-        Toast.makeText(this, "We are Offline", Toast.LENGTH_SHORT).show();
-    }
-}
+	    @Override
+	    public void onBecameOffline() {
+		Toast.makeText(this, "We are Offline", Toast.LENGTH_SHORT).show();
+	    }
+	}
