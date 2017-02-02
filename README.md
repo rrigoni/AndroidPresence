@@ -43,7 +43,7 @@ Add it in your root build.gradle at the end of repositories:
 		    @Override
 		    public void onCreate() {
 			super.onCreate();
-			Presence.init(this);
+				Presence.init(this);
 		    }
 
 		    @Override
