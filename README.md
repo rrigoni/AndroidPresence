@@ -25,7 +25,7 @@ Add it in your root build.gradle at the end of repositories:
   	Presence.init(this, new Presence.PresenceChangeListener() {
 		    @Override
 		    public void onBecameOnline() {
-			Toast.makeText(SampleApp.this, "We are Online", Toast.LENGTH_SHORT).show();
+			Toast.makeText(SampleApp.this, "We are Online", Toast.LENGTH_SHORT).show();	
 		    }
 
 		    @Override
